@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Details</title>
+    <link rel="stylesheet" href="D:/PlantAI/static/styles.css">  <!-- Assume a CSS file for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Identification Results: {{ plant['Commonname'] }}</h1>
+
+        <h2>General Information</h2>
+        <table>
+            <tr><th>Latin Name</th><td>{{ plant['Latinname'] }}</td></tr>
+            <tr><th>Author</th><td>{{ plant['Author'] }}</td></tr>
+            <tr><th>Family</th><td>{{ plant['Family'] }}</td></tr>
+            <tr><th>Common Name</th><td>{{ plant['Commonname'] }}</td></tr>
+            <tr><th>Synonyms</th><td>{{ plant['Synonyms'] }}</td></tr>
+            <tr><th>Last Update</th><td>{{ plant['Lastupdate'] }}</td></tr>
+            <tr><th>Botanical References</th><td>{{ plant['Botanicalreferences'] }}</td></tr>
+            <tr><th>Range</th><td>{{ plant['Range'] }}</td></tr>
+        </table>
+
+        <h2>Growth Conditions</h2>
+        <table>
+            <tr><th>Habit</th><td>{{ plant['Habit'] }}</td></tr>
+            <tr><th>Deciduous/Evergreen</th><td>{{ plant['Deciduous/Evergreen'] }}</td></tr>
+            <tr><th>Height</th><td>{{ plant['Height'] }}</td></tr>
+            <tr><th>Width</th><td>{{ plant['Width'] }}</td></tr>
+            <tr><th>Hardyness</th><td>{{ plant['Hardyness'] }}</td></tr>
+            <tr><th>Soil Type</th><td>{{ plant['Soil'] }}</td></tr>
+            <tr><th>pH Level</th><td>{{ plant['pH'] }}</td></tr>
+            <tr><th>Moisture</th><td>{{ plant['Moisture'] }}</td></tr>
+            <tr><th>Well-drained</th><td>{{ plant['Well-drained'] }}</td></tr>
+            <tr><th>Nitrogen Fixer</th><td>{{ plant['Nitrogenfixer'] }}</td></tr>
+            <tr><th>Acid Soil Tolerance</th><td>{{ plant['Acid'] }}</td></tr>
+            <tr><th>Alkaline Soil Tolerance</th><td>{{ plant['Alkaline'] }}</td></tr>
+            <tr><th>Saline Soil Tolerance</th><td>{{ plant['Saline'] }}</td></tr>
+            <tr><th>Growth Rate</th><td>{{ plant['Growthrate'] }}</td></tr>
+            <tr><th>Poor Soil Tolerance</th><td>{{ plant['Poorsoil'] }}</td></tr>
+            <tr><th>Self-fertile</th><td>{{ plant['Self-fertile'] }}</td></tr>
+            <tr><th>Frost Tender</th><td>{{ plant['FrostTender'] }}</td></tr>
+            <tr><th>Heavy Clay Tolerance</th><td>{{ plant['Heavyclay'] }}</td></tr>
+            <tr><th>Easy to Pull Out</th><td>{{ plant['Pull-out'] }}</td></tr>
+        </table>
+
+        <h2>Reproductive Information</h2>
+        <table>
+            <tr><th>Flowering Time</th><td>{{ plant['Floweringtime'] }}</td></tr>
+            <tr><th>Seed Ripens</th><td>{{ plant['Seedripens'] }}</td></tr>
+            <tr><th>Flower Type</th><td>{{ plant['FlowerType'] }}</td></tr>
+            <tr><th>Pollinators</th><td>{{ plant['Pollinators'] }}</td></tr>
+        </table>
+
+        <h2>Edible and Medicinal Uses</h2>
+        <table>
+            <tr><th>Edible Uses</th><td>{{ plant['Edibleuses'] }}</td></tr>
+            <tr><th>Uses Notes</th><td>{{ plant['Usesnotes'] }}</td></tr>
+            <tr><th>Medicinal</th><td>{{ plant['Medicinal'] }}</td></tr>
+            <tr><th>Medicinal Rating</th><td>{{ plant['MedicinalRating'] }}</td></tr>
+        </table>
+
+        <h2>Environmental Adaptations</h2>
+        <table>
+            <tr><th>Shade Preference</th><td>{{ plant['Shade'] }}</td></tr>
+            <tr><th>Wind Tolerance</th><td>{{ plant['Wind'] }}</td></tr>
+            <tr><th>Pollution Tolerance</th><td>{{ plant['Pollution'] }}</td></tr>
+            <tr><th>Drought Resistance</th><td>{{ plant['Drought'] }}</td></tr>
+            <tr><th>Known Hazards</th><td>{{ plant['Knownhazards'] }}</td></tr>
+        </table>
+
+        <h2>Cultivation and Propagation</h2>
+        <table>
+            <tr><th>Propagation Methods</th><td>{{ plant['Propagation1'] }}</td></tr>
+            <tr><th>Cultivation Details</th><td>{{ plant['Cultivationdetails'] }}</td></tr>
+            <tr><th>Cultivars</th><td>{{ plant['Cultivars'] }}</td></tr>
+            <tr><th>Cultivars in Cultivation</th><td>{{ plant['Cultivarsincultivation'] }}</td></tr>
+        </table>
+        <h2>Additional Notes</h2>
+        <table>
+        <tr><th>Record Checked</th><td>{{ plant['Recordchecked'] }}</td></tr>
+        <tr><th>Site-Specific Notes</th><td>{{ plant['Sitespecificnotes'] }}</td></tr>
+        <tr><th>Scented</th><td>{{ plant['Scented'] }}</td></tr>
+    </table>
+    </div>
+</body>
+</html>

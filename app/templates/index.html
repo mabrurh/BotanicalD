@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload a Leaf Image</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a Leaf Image</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit">Identify Plant</button>
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Details</title>
+    <link rel="stylesheet" href="/static/styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Identification Results: {{ plant['Commonname'] or 'Unknown' }}</h1>
+
+        <h2>General Information</h2>
+        <table>
+            <tr><th>Latin Name</th><td>{{ plant['Latinname'] or 'N/A' }}</td></tr>
+            <tr><th>Author</th><td>{{ plant['Author'] or 'N/A' }}</td></tr>
+            <tr><th>Botanical References</th><td>{{ plant['Botanicalreferences'] or 'N/A' }}</td></tr>
+            <tr><th>Family</th><td>{{ plant['Family'] or 'N/A' }}</td></tr>
+            <tr><th>Common Name</th><td>{{ plant['Commonname'] or 'N/A' }}</td></tr>
+            <tr><th>Synonyms</th><td>{{ plant['Synonyms'] or 'N/A' }}</td></tr>
+            <tr><th>Last Update</th><td>{{ plant['Lastupdate'] or 'N/A' }}</td></tr>
+            <tr><th>Record Checked</th><td>{{ plant['Recordchecked'] or 'N/A' }}</td></tr>
+        </table>
+
+        <h2>Growth Conditions</h2>
+        <table>
+            <tr><th>Habit</th><td>{{ plant['Habit'] or 'N/A' }}</td></tr>
+            <tr><th>Deciduous/Evergreen</th><td>{{ plant['Deciduous/Evergreen'] or 'N/A' }}</td></tr>
+            <tr><th>Height</th><td>{{ plant['Height'] or 'N/A' }}</td></tr>
+            <tr><th>Width</th><td>{{ plant['Width'] or 'N/A' }}</td></tr>
+            <tr><th>Hardyness</th><td>{{ plant['Hardyness'] or 'N/A' }}</td></tr>
+            <tr><th>Soil Type</th><td>{{ plant['Soil'] or 'N/A' }}</td></tr>
+            <tr><th>Moisture</th><td>{{ plant['Moisture'] or 'N/A' }}</td></tr>
+            <tr><th>Well-drained</th><td>{{ plant['Well-drained'] or 'N/A' }}</td></tr>
+            <tr><th>Nitrogen Fixer</th><td>{{ plant['Nitrogenfixer'] or 'N/A' }}</td></tr>
+            <tr><th>pH Level</th><td>{{ plant['pH'] or 'N/A' }}</td></tr>
+        </table>
+
+        <h2>Environmental Tolerances</h2>
+        <table>
+            <tr><th>Shade Preference</th><td>{{ plant['Shade'] or 'N/A' }}</td></tr>
+            <tr><th>Saline Soil Tolerance</th><td>{{ plant['Saline'] or 'N/A' }}</td></tr>
+            <tr><th>Acid Soil Tolerance</th><td>{{ plant['Acid'] or 'N/A' }}</td></tr>
+            <tr><th>Alkaline Soil Tolerance</th><td>{{ plant['Alkaline'] or 'N/A' }}</td></tr>
+            <tr><th>Frost Tender</th><td>{{ plant['FrostTender'] or 'N/A' }}</td></tr>
+            <tr><th>Drought Resistance</th><td>{{ plant['Drought'] or 'N/A' }}</td></tr>
+            <tr><th>Pollution Tolerance</th><td>{{ plant['Pollution'] or 'N/A' }}</td></tr>
+            <tr><th>Wind Tolerance</th><td>{{ plant['Wind'] or 'N/A' }}</td></tr>
+            <tr><th>Heavy Clay Tolerance</th><td>{{ plant['Heavyclay'] or 'N/A' }}</td></tr>
+        </table>
+
+        <h2>Reproductive Information</h2>
+        <table>
+            <tr><th>Flowering Time</th><td>{{ plant['Floweringtime'] or 'N/A' }}</td></tr>
+            <tr><th>Seed Ripens</th><td>{{ plant['Seedripens'] or 'N/A' }}</td></tr>
+            <tr><th>Flower Type</th><td>{{ plant['FlowerType'] or 'N/A' }}</td></tr>
+            <tr><th>Pollinators</th><td>{{ plant['Pollinators'] or 'N/A' }}</td></tr>
+            <tr><th>Self-fertile</th><td>{{ plant['Self-fertile'] or 'N/A' }}</td></tr>
+        </table>
+
+        <h2>Uses</h2>
+        <table>
+            <tr><th>Edible Parts</th><td>{{ plant['Edibleuses'] or 'N/A' }}</td></tr>
+            <tr><th>Medicinal Uses</th><td>{{ plant['Medicinal'] or 'N/A' }}</td></tr>
+            <tr><th>Other Uses</th><td>{{ plant['Usesnotes'] or 'N/A' }}</td></tr>
+        </table>
+
+        <h2>Miscellaneous</h2>
+        <table>
+            <tr><th>Scented</th><td>{{ plant['Scented'] or 'N/A' }}</td></tr>
+            <tr><th>Known Hazards</th><td>{{ plant['Knownhazards'] or 'N/A' }}</td></tr>
+        </table>
+    </div>
+</body>
+</html>
